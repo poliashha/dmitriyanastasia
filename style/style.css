@@ -126,11 +126,21 @@
   right: -7px;
 }
 
-.button {
+.buttonsend {
   border: 1px solid #2e1610;
-  width: 235px;
-  height: 26px;
   background-color: transparent;
+   width: 235px;
+  height: 26px;
+}
+
+.button{
+   width: 235px;
+  height: 30px;
+}
+
+.refrence{
+  padding: 3px 40px;
+  font-size: 16px;
 }
 
 .dital{
@@ -266,8 +276,8 @@
 
 @media (hover: hover) {
   .button:hover {
-    background-color: var(--color-text-brown);
-    color: var(--bg-color);
+    background-color: var(--color-text);
+    color: white;
   }
 }
 

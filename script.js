@@ -1,5 +1,5 @@
 const scriptURL =
-  "https://script.google.com/macros/s/AKfycbzjLcr7weUUNKLTgR4jYk0kM2hzz_5PEkKmVlSHS4WIVJsOx1T-gAdf8rLqPWunz6U-MQ/exec";
+  "https://script.google.com/macros/s/AKfycbxikfFD_lstk4uCx0oAfo2AtUZ5k0Abar4NIv09MnuxFIvcrXkJ3T7xmX0xHSU666UA/exec";
 const form = document.forms["submit-to-google-sheet"];
 
 form.addEventListener("submit", async (e) => {
@@ -7,17 +7,15 @@ form.addEventListener("submit", async (e) => {
   const formData = new FormData(form);
   const formSendResult = document.querySelector(".form-send");
   formSendResult.textContent = "";
-  const drinks = formData.getAll("drinks");
+
   const submitButton = document.querySelector(".button");
   submitButton.textContent = "Отправка...";
   // Преобразуем массив в строку с разделителем (например, запятая)
-  const drinksString = drinks.join(", ");
-
+  
   // Создаем новый FormData и добавляем все поля
   const newFormData = new FormData();
   newFormData.append("name", formData.get("name"));
   newFormData.append("presence", formData.get("presence"));
-  
   try {
     const response = await fetch(scriptURL, {
       method: "POST",
@@ -67,7 +65,6 @@ document.querySelectorAll('input[name="presence"]').forEach((radio) => {
 const button = document.querySelector(".button");
 const mapbutton = document.querySelector(".map-button");
 button.addEventListener("touchstart", function (e) {
-  
   this.classList.add("touch-pressed");
 });
 
@@ -75,12 +72,10 @@ button.addEventListener("touchend", function (e) {
   this.classList.remove("touch-pressed");
 });
 mapbutton.addEventListener("touchstart", function (e) {
-  
   this.classList.add("touch-pressed");
 });
 
 mapbutton.addEventListener("touchend", function (e) {
   this.classList.remove("touch-pressed");
 });
-
 
