@@ -359,6 +359,7 @@
   align-items: center;
   justify-content: center;
   gap: 34px;
+  padding-bottom: 27px;
 }
 
 .box-footer{
