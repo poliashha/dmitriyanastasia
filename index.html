@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      property="og:title"
+      content="Приглашение на свадьбу | Дмитрий & Анастасия | 12.08.2026"
+    />
+    <meta property="og:description" content="Приглашение на торжество" />
+    <meta property="og:image" content="./img/icon.jpg" />
+    <meta property="og:image:width" content="410" />
+    <meta property="og:image:height" content="410" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta name="color-scheme" content="light" />
+    <title>Приглашение на свадьбу</title>
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <link rel="stylesheet" href="style/global.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/variabels.css" />
+  </head>
+  <body class="body">
+    <header class="header">
+      <h1 class="kursiv">Мы женимся!</h1>
+      <object
+        type="image/svg+xml"
+        data="./img/together.svg"
+        width="298"
+        height="384"
+      ></object>
+      <object
+        class="foto ligth"
+        type="image/svg+xml"
+        data="./img/ligth.svg"
+        width="130"
+        height="290"
+      ></object>
+      <object
+        class="foto cake"
+        type="image/svg+xml"
+        data="./img/cake.svg"
+        width="110"
+        height="174"
+      ></object>
+    </header>
+    <main class="main">
+      <article class="date">
+        <h2 class="kursiv">Дата</h2>
+        <p class="text-data">12/08/2026</p>
+        <object
+          class="angel"
+          type="image/svg+xml"
+          data="./img/angel.svg"
+          width="412"
+          height="213"
+        ></object>
+        <p class="text text-angel">
+          мы верим, что счастье становится полным, когда им делятся с самыми
+          близкими.
+        </p>
+      </article>
+      <article class="locaion">
+        <div>
+          <h2 class="kursiv">Локация</h2>
+          <p class="text">15:30</p>
+        </div>
+        <p class="text">
+          База отдыха Мария,<br />
+          ул. Пятница, 7
+        </p>
+        <button class="map-button">
+          <a
+            class="href"
+            href="https://yandex.ru/maps/-/CPvoeM8R"
+            target="_blank"
+            >Локация</a
+          >
+        </button>
+        <object
+          class="foto-banet"
+          type="image/svg+xml"
+          data="./img/banket.svg"
+          width="196"
+          height="166"
+        ></object>
+      </article>
+      <article class="timing">
+        <object
+          class="timing-img"
+          type="image/svg+xml"
+          data="./img/timing.svg"
+          width="411"
+          height="720"
+        ></object>
+      </article>
+      <article class="dresscode">
+        <h2 class="kursiv">Дресс-код</h2>
+        <div class="box-code">
+          <p class="text text-dresscode">
+            Для нас главное - ваше присутствие! Мы будем признательны, если при
+            выборе наряда вы остановите свой выбор на костюмах и вечерних
+            платьях спокойных оттенков.
+          </p>
+          <object
+            class="dress-img"
+            type="image/svg+xml"
+            data="./img/swech.svg"
+            width="58"
+            height="185"
+          ></object>
+        </div>
+      </article>
+      <article class="dital">
+        <h2 class="kursiv">Детали</h2>
+
+        <p class="text">
+          Дорогие гости, если вы желаете наполнить программу сюрпризом:
+          танцевальный подарок, видео поздравление и прочие креативы (мы будем
+          очень счастливы) - то смело пишите нашему ведущему
+        </p>
+        <button class="button">
+          <a
+            class="href refrence"
+            href="https://vk.ru/alexeyanisimov2013"
+            target="_blank"
+            >Написать в ВК</a
+          >
+        </button>
+        <object
+          class="convert"
+          type="image/svg+xml"
+          data="./img/convert.svg"
+          width="121"
+          height="92"
+        ></object>
+      </article>
+      <article class="anketa">
+        <h2 class="kursiv">Анкета</h2>
+        <form
+          class="form-box"
+          name="submit-to-google-sheet"
+          id="form"
+          action="#"
+        >
+          <label class="input_box">
+            <input
+              class="input"
+              name="name"
+              id="name"
+              type="text"
+              placeholder="Имя Фамилия"
+              required
+            />
+            <span class="error-text" id="error-text"
+              >Пожалуйста, заполните поле</span
+            >
+          </label>
+          <fieldset class="radio">
+            <h2 class="radio-text">Сможете ли вы присутствовать?</h2>
+            <label class="custom-radio">
+              <input
+                type="radio"
+                name="presence"
+                value="да"
+                id="presenceYes"
+                required
+              />
+              <span class="radio-circle"></span>
+              <span class="text-input">Конечно, с удовольствием</span>
+            </label>
+            <label class="custom-radio">
+              <input type="radio" name="presence" value="нет" id="presenceNo" />
+              <span class="radio-circle"></span>
+              <span class="text-input">Нет, к сожалению</span>
+            </label>
+            <label class="custom-radio">
+              <input
+                type="radio"
+                name="presence"
+                value="ответит позже"
+                id="presenceNo"
+              />
+              <span class="radio-circle"></span>
+              <span class="text-input">Смогу дать ответ до 1.06.2026</span>
+            </label>
+
+            <div class="radio-error" id="presenceError">
+              Выберите, один из вариантов
+            </div>
+          </fieldset>
+          <button class="button hover" type="submit">
+            <p class="href-button button-text">Отправить</p>
+          </button>
+        </form>
+      </article>
+      <article class="footer">
+        <div class="box-footer">
+          <h2 class="kursiv">Ждем Вас</h2>
+          <object
+            class="convert"
+            type="image/svg+xml"
+            data="./img/heart.svg"
+            width="88"
+            height="89"
+          ></object>
+        </div>
+        <div class="conteiner-footer">
+          <p class="kursiv footer-text">
+          С любовью, ваши 
+        </p>
+          <p class="kursiv footer-text footer-second">
+           Дмитрий и Анастасия
+        </p>
+        </div>
+        <object
+            class=""
+            type="image/svg+xml"
+            data="./img/collage.png"
+            width="240"
+            height="296"
+          ></object>
+        <object
+            class=""
+            type="image/svg+xml"
+            data="./img/angels.svg"
+            width="325"
+            height="165"
+          ></object>
+      </article>
+      <script src="script.js"></script>
+    </main>
+  </body>
+</html>
