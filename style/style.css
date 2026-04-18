@@ -138,6 +138,7 @@
   height: 30px;
   font-family: var(--main-font);
   font-size: 18x;
+  font-weight: 400;
 }
 
 .refrence{
@@ -262,7 +263,7 @@
 
 .button.touch-pressed {
   background-color: var(--color-text);
-  color: var(--bg-color);
+  color: var(--background-color);
 }
 
 .anketa{
